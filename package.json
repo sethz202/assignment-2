@@ -1,0 +1,29 @@
+{
+    "name": "dynamic-webserver",
+    "version": "0.0.0",
+    "description": "Dynamic Web Server using Node JS",
+    "author": {
+        "name": "Seth Zerwas",
+        "email": "zerw2167@stthomas.edu"
+    },
+    "contributors": [
+        {
+            "name": "Hayden Richards",
+            "email": "rich7524@stthomas.edu"
+        },
+        {
+            "name": "Eric Bixby",
+            "email": "eric.bixby@stthomas.edu"
+        }
+    ],
+    "main": "server.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sethz202/assignment-2"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "plotly": "^1.0.6",
+        "sqlite3": "^5.1.2"
+    }
+}
