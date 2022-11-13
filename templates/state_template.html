@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>%%STATE_NAME%% Car Accident Data</title>
+    <link rel="stylesheet" href="/css/foundation.css">
+    <link rel = "stylesheet" href = "/css/style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li class="menu-text">Bad Driver Data</li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/data">Accident Data</a></li>
+                <li><a href="/states">View Data By State</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <img id="drivers_img" src="%%STATE_IMAGE%%" alt="Picture of the %%STATE_NAME%% flag" />
+        <h1 id="state_name">%%STATE_NAME%%</h1>
+        <div class="clear"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="state_speed">Percentage Of Drivers Involved In Fatal Collisions Who Were Speeding</th>
+                    <th class="state_alcohol">Percentage Of Drivers Involved In Fatal Collisions Who Were Alcohol-Impaired</th>
+                    <th class="state_premiums">Car Insurance Premiums ($)</th>
+                    <th class="state_losses">Losses Incurred By Insurance Companies Per Insured Driver ($)</th>
+                </tr>
+            </thead>
+            <tbody>
+                %%STATE_INFO%%
+            </tbody>
+        </table>
+        %%PREV_BUTTON%%
+        %%NEXT_BUTTON%%
+    </body>
+</html>

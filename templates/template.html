@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>%%DATA_TYPE%% Related Accidents</title>
+    <link rel="stylesheet" href="/css/foundation.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li class="menu-text">Bad Driver Data</li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/data">Accident Data</a></li>
+                <li><a href="/states">View Data By State</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <img id="data_img" src="%%DATA_IMAGE%%" alt="Picture of a %%PICTURE_REASON%%, which signifies %%DATA_TYPE_LOWERCASE%%" />
+        <h1 id="data_type">%%DATA_TYPE%%</h1>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+        <iframe class="chart" width="600" height="400" frameboarder="0" scrolling="no" src="%%GRAPH_SOURCE%%"></iframe>
+        <table class="data">
+            <thead>
+                <tr>
+                    <th class="state_title">State</th>
+                    <th class="state_%%DATA_TYPE%%">Percentage Of Drivers Involved In Fatal Collisions Who Were %%TABLE_REASON%%</th>
+                </tr>
+            </thead>
+            <tbody>
+                %%DRIVERS_INFO%%
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
